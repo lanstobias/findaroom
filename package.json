@@ -1,0 +1,21 @@
+{
+  "name": "findaroom",
+  "version": "1.0.0",
+  "description": "Hitta ett rum när snikna jävlar sitter ensama in grupprum.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tobias Lans",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-stormpath": "^4.0.0",
+    "jade": "^1.11.0",
+    "request": "^2.88.0"
+  }
+}

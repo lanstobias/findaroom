@@ -1,0 +1,32 @@
+mixin space()
+  | !{' '}
+
+html
+  head
+    title=title
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Baking Bootstrap Snippets with Jade')
+    link(href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css", rel="stylesheet")
+
+  body
+    div.jumbotron
+      div.container
+          h1.display-4.text-center findaroom
+    
+    div.container
+
+      each house in houses
+        div.row
+          div.col
+            h2 #{house.name}
+
+        if house.free.length != 0
+          div.row
+            div.col
+              each room in house.free
+                h2.badge.badge-light #{room}
+                +space
+        else
+          p Inga lediga rum
